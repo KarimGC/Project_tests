@@ -1,0 +1,28 @@
+#include <iostream>
+#include "learningame.h"
+
+int main() {
+    // Crear una instancia de Score
+    Score scoreObj;
+
+    // Establecer y obtener la puntuación
+    scoreObj.setScore(100);
+    std::cout << "Score: " << scoreObj.getScore() << std::endl;
+
+    // Crear una instancia de UserProfile
+    UserProfile user("Usuario1", 200);
+
+    // Obtener el nombre y la puntuación del UserProfile
+    std::cout << "Nombre: " << user.getName() << std::endl;
+    std::cout << "Puntuacion: " << user.getScore() << std::endl;
+
+    // Establecer un nuevo nombre y puntuación para UserProfile
+    user.setName("Usuario2");
+    user.setScore(300);
+
+    // Obtener los nuevos valores
+    std::cout << "Nuevo nombre: " << user.getName() << std::endl;
+    std::cout << "Nueva puntuacion: " << user.getScore() << std::endl;
+
+    return 0;
+}
