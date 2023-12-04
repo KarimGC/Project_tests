@@ -15,21 +15,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="learning_game.cpp">
+    <ClCompile Include="UserProfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.txt">
+    <ClCompile Include="ScoreTracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kimtest.txt">
+    <ClCompile Include="Fill.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kim.cpp">
+    <ClCompile Include="Translation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Learning_Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="learning_game.h">
+    <ClInclude Include="Scoretracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Translation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserProfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Learning_Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

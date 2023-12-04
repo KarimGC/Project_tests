@@ -1,8 +1,25 @@
-// Learning
 #ifndef LEARNING_GAME_H
 #define LEARNING_GAME_H
 
 #include <string>
+#include <queue>
+#include <iostream>
+#include <locale>
+
+using namespace std;
+
+class Translation {
+public:
+    void display(bool language);
+    int playTranslation(int difficulty);
+};
+
+class Fill {
+
+public:
+    void display(bool language);
+    int playTranslation(int difficulty);
+};
 
 class UserProfile {
 public:
@@ -16,10 +33,30 @@ public:
     void setLanguage(bool lan);
     void setScore(int score);
 
+
 private:
     std::string name;
     bool language;
     int score;
 };
 
-#endif // LEARNING_GAME_H  
+class ScoreTracker {
+public:
+    ScoreTracker();
+
+    ScoreTracker(string userNameEnt);
+
+    void ScoreEntry(int scoreEnt);
+
+    void SetUserName(string userNameEnt);
+
+    void PrintTrackedScore();
+
+private:
+    string username;
+    queue<int> scores;
+    int cnt = 1;
+};
+
+
+#endif
