@@ -1,8 +1,9 @@
-#include "Fill.h"
 #include <string>
 #include <queue>
 #include <iostream>
 #include <locale>
+
+#include "Learning_Game.h"
 
 using namespace std;
 
@@ -29,14 +30,14 @@ void Fill::display(bool language) {
     }
 }
 
-int Fill::playTranslation(int difficulty) {
+int Fill::playTranslation() {
     char c;
     char option;
     int score = 0;
 
     cin >> c;
 
-    if ((c == 's' || c == 'S') && difficulty == 0) {
+    if (c == 's' || c == 'S') {
         cout << "We usually walk the dog in the ____" << endl;
         cout << "(a) phone (b) car (c) park (d) tree" << endl;
         cin >> option;
@@ -88,7 +89,7 @@ int Fill::playTranslation(int difficulty) {
         }
     }
 
-    if ((c == 's' || c == 'S') && difficulty == 1) {
+    if (c == 's' || c == 'S') {
         cout << "Yo ___ estudiante de universidad (soy) somos son ser" << endl;
         cout << "(a) son (b) soy (c) somos (d) ser" << endl;
         cin >> option;
@@ -140,7 +141,7 @@ int Fill::playTranslation(int difficulty) {
         }
     }
 
-    if ((c == 's' || c == 'S') && difficulty == 2) {
+    if (c == 's' || c == 'S') {
         cout << "Laura no es española ____ colombiana (sino) que si tambien" << endl;
         cout << "(a) tambien (b) que (c) sino (d) si" << endl;
         cin >> option;

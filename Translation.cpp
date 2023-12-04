@@ -1,6 +1,6 @@
 #include<iostream>
 #include <locale>
-#include "Translation.h"
+#include "Learning_Game.h"
 
 using namespace std;
 
@@ -28,14 +28,14 @@ void Translation::display(bool language) {  //language 0=English 1=Spanish
 }
 
 
-int Translation::playTranslation(int difficulty) { //Difficulty 0=easy 1=medium 2=hard
+int Translation::playTranslation() { //Difficulty 0=easy 1=medium 2=hard
     char c;
     char option;
     int score = 0;
 
     cin >> c;
 
-    if ((c == 's' || c == 'S') && difficulty == 0) {
+    if (c == 's' || c == 'S') {
         cout << "Gato" << endl;
         cout << "(a) Cat (b) Dog (c) Bird (d) Fish" << endl;
         cin >> option;
@@ -87,7 +87,7 @@ int Translation::playTranslation(int difficulty) { //Difficulty 0=easy 1=medium 
         }
     }
 
-    if ((c == 's' || c == 'S') && difficulty == 1) {
+    if (c == 's' || c == 'S') {
         cout << "Repentino" << endl;
         cout << "(a) Represent (b) Delayed (c) Sudden (d) Fast" << endl;
         cin >> option;
@@ -139,7 +139,7 @@ int Translation::playTranslation(int difficulty) { //Difficulty 0=easy 1=medium 
         }
     }
 
-    if ((c == 's' || c == 'S') && difficulty == 2) {
+    if (c == 's' || c == 'S') {
         cout << "Crowd" << endl;
         cout << "(a) Multitud (b) Multiplicar (c) Malta (d) Cuervo" << endl;
         cin >> option;

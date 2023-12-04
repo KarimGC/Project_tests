@@ -1,17 +1,18 @@
 #include <iostream>
 #include <string>
 #include <queue>
+
+#include "Learning_Game.h"
+
 using namespace std;
 
-class ScoreTracker {
-public:
-	ScoreTracker() {
+ScoreTracker::ScoreTracker() {
 		username = "N/A";
 	}
-	ScoreTracker(string userNameEnt) {
+ScoreTracker::ScoreTracker(string userNameEnt) {
 		username = userNameEnt;
 	}
-	void ScoreEntry(int scoreEnt) {
+	void ScoreTracker::ScoreEntry(int scoreEnt) {
 		if (scores.empty()) {
 			scores.push(-99);
 		}
@@ -19,11 +20,11 @@ public:
 		scores.push(scoreEnt);
 	}
 
-	void SetUserName(string userNameEnt) {
+	void ScoreTracker::SetUserName(string userNameEnt) {
 		username = userNameEnt;
 	}
 
-	void PrintTrackedScore() {
+	void ScoreTracker::PrintTrackedScore() {
 		cout << username << "'s scores: " << endl;
 		while (!scores.empty()) {
 			if (scores.front() == -99) {
@@ -38,11 +39,7 @@ public:
 		}
 	}
 
-private:
-	string username;
-	queue<int> scores;
-	int cnt = 1;
-};
+
 
 /*int main() {
 

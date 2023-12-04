@@ -8,17 +8,17 @@
 
 using namespace std;
 
-class Translation {
+class Translation : private ScoreTracker {
 public:
     void display(bool language);
-    int playTranslation(int difficulty);
+    int playTranslation();
 };
 
-class Fill {
+class Fill : private ScoreTracker {
 
 public:
     void display(bool language);
-    int playTranslation(int difficulty);
+    int playTranslation();
 };
 
 class UserProfile {
@@ -40,7 +40,7 @@ private:
     int score;
 };
 
-class ScoreTracker {
+class ScoreTracker : private UserProfile{
 public:
     ScoreTracker();
 
