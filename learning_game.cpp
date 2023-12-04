@@ -1,5 +1,5 @@
 // UserProfile.cpp
-#include "Learningame.h"
+#include "learning_game.h"
 
 UserProfile::UserProfile() : language(0), score(0) {}
 

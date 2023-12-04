@@ -130,10 +130,10 @@
     <ClCompile Include="kim.cpp" />
     <ClCompile Include="kimtest.txt" />
     <ClCompile Include="Main.txt" />
-    <ClCompile Include="learninggame.cpp" />
+    <ClCompile Include="learning_game.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="learningame.h" />
+    <ClInclude Include="learning_game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
